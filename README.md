@@ -1,21 +1,25 @@
-NODEJS-RBAC-TUTORIAL
-Node.js RBAC
+#NODEJS-RBAC-TUTORIAL
+##Node.js RBAC
 
-A complete guide and implementation of Role-Based Access Control (RBAC) in Node.js applications. This tutorial demonstrates how to secure your application by managing permissions and roles efficiently.
+A complete guide and implementation of Role-Based Access Control (RBAC) in Node.js applications. 
+This tutorial demonstrates how to secure your application by managing permissions and roles efficiently.
 
-🚀 Features
-🔒 Role-Based Access Control (RBAC) Implementation
-👤 User Authentication & Authorization
-🛡️ Secure API Endpoints
-📚 Step-by-step Code Examples
-📝 Easy to Understand Explanations
-📦 Tech Stack
+#🚀 Features
+##🔒 Role-Based Access Control (RBAC) Implementation
+##👤 User Authentication & Authorization
+##🛡️ Secure API Endpoints
+##📚 Step-by-step Code Examples
+##📝 Easy to Understand Explanations
+
+#📦 Tech Stack
 Node.js
 Express.js
 MongoDB (Optional)
 JWT Authentication
 Mongoose (Optional)
-🏗️ Project Structure
+
+
+#🏗️ Project Structure
 Code
 .
 ├── controllers/
@@ -25,6 +29,7 @@ Code
 ├── utils/
 ├── app.js
 └── package.json
+
 🛠️ Getting Started
 Clone the repository
 
@@ -42,17 +47,17 @@ Run the app
 
 bash
 npm start
-📚 How It Works
+##📚 How It Works
 User Signup/Login:
 Users can register and log in to receive a JWT token.
 
-Assigning Roles:
+##Assigning Roles:
 Assign roles such as admin, user, manager to users.
 
-Protecting Routes:
+##Protecting Routes:
 Middleware functions check JWT and verify user roles before granting access to certain endpoints.
 
-Custom Permissions:
+##Custom Permissions:
 Easily extend roles and permissions to suit your needs.
 
 🌟 Example Usage
@@ -61,13 +66,13 @@ js
 router.get('/admin', authorize('admin'), (req, res) => {
   res.send('Welcome Admin!');
 });
-🤝 Contributing
+##🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-📄 License
+##📄 License
 This project is licensed under the MIT License.
 
-🙋‍♂️ Questions?
+##🙋‍♂️ Questions?
 Feel free to reach out by opening an issue or contacting me on GitHub.
 
 Happy Coding! 🚀
